@@ -27,6 +27,7 @@ import { CustomizerControlsProvider } from "../lib/context";
 import Preview from "../Compnents/Preview";
 import Controls from "../Compnents/Controls";
 import { useSearchParams } from "react-router-dom";
+import Loading from "../Compnents/Loading";
 
 const colors = [
   { name: "black", hex: "#333333" },
@@ -122,6 +123,7 @@ function Build() {
           Add to Cart
         </ButtonLink>
       </div>
+      <Loading />
     </div>
   );
 }
